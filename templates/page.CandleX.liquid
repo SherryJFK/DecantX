@@ -1,0 +1,264 @@
+{% include 'global-variables' %}
+<div class="page">
+  <div
+    class="container {% if offset_pages_margin_top_d > 0 %} mt-lg-{{ offset_pages_margin_top_d }}{% endif %} pb-30{% if offset_pages_margin_bottom_d > 0 %} mb-lg-{{ offset_pages_margin_bottom_d }}{% endif %}">
+    <div class="rte">
+
+      {% include 'parse-for-icons' content: page.content %}
+
+      <div class="shopify-section">
+        <div data-section-type="spacer" class="container">
+          <div class="builder-spacer pt-10 pt-md-60 pb-0 pb-md-0"></div>
+        </div>
+
+      </div>
+
+
+      <div class="shopify-section">
+
+        <div>
+          <div data-section-type="home-builder" class="container">
+
+            <div class="home-builder overflow-hidden">
+              <div class="row align-items-start justify-content-center">
+                <div class="home-builder-block-id-1586447503284-1 col-12 col-md-12  ">
+                  <!-- snippets/promobox.liquid -->
+
+
+                  <template class="js-loader-inline-style"></template>
+                  <div> 
+                  {{'//cdn.shopify.com/s/files/1/0288/9875/4698/files/Banner_Candle.png' | img_tag: 'The Candle Store' }}
+      
+                  <h5> Inspiration</h5><h5> Inspiration</h5>
+                  <h3> <a href="https://www.candle.com">YOUR CANDLE INNOVATION</a> </h3>
+            
+                  <h5>  Since Adam and Eve, Everything has an olfactory memory: my mother's kitchen when I was a child, my father's garage, my grandmother's garden, my grandfather's library, the fragrance of my first love... Some sense of smell can always bring back certain memories.</h5>
+                  <hr />
+                  </div>
+                  <div
+                    class="promobox promobox--type-1-4 promobox--style-2 image-animation-trigger position-relative text-center overflow-hidden text-underline-parent">
+                    <a href="/collections/giftbox" class="d-block">
+
+                      <div class="image-animation image-animation--from-none image-animation--to-bottom">
+                        <div class="rimage d-none d-sm-block" style=" min-height: 0px;">
+                          <div class="d-sm-none" style="padding-top: 550px;"></div>
+                          <div class="d-none d-sm-block d-md-none" style="padding-top: 400px;">
+                          </div>
+                          <div class="d-none d-md-block d-lg-none" style="padding-top: 450px;">
+                          </div>
+                          <div class="d-none d-lg-block d-xl-none" style="padding-top: 500px;">
+                          </div>
+                          <div class="d-none d-xl-block d-ultra-none" style="padding-top: 550px;">
+                          </div>
+                          
+                          <div class="d-none d-ultra-block" style="padding-top: 38%;"></div>
+                          <img class="rimage__img rimage__img--cover lazyload entered loaded" loading="eager"
+                            data-master="//cdn.shopify.com/s/files/1/0288/9875/4698/files/Banner_Candle.png?v=1673194071"
+                            data-aspect-ratio="2.1272727272727274" data-aspect-ratio-original="2.1272727272727274"
+                            data-stretch-size="cover"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs="
+                            data-srcset="////cdn.shopify.com/s/files/1/0288/9875/4698/files/Banner_Candle.png?v=1673194071 1x, //cdn.shopify.com/s/files/1/0288/9875/4698/files/Banner_Candle.progressive.png?v=1673194071 2x, //cdn.shopify.com/s/files/1/0288/9875/4698/files/Banner_Candle.progressive.png.jpg?v=1673194071 3x"
+                            data-scale-perspective="1.1" alt="" data-ll-status="loaded"
+                            srcset="//cdn.shopify.com/s/files/1/0288/9875/4698/files/Banner_Candle.png?v=1673194071 1x, //cdn.shopify.com/s/files/1/0288/9875/4698/files/Banner_Candle.progressive.png?v=1673194071 2x, //cdn.shopify.com/s/files/1/0288/9875/4698/files/Banner_Candle.progressive.png.jpg?v=1673194071 3x">
+                        </div>
+                  
+                      </div>
+                    </a>
+                    <div
+                      class="promobox__content absolute-stretch d-flex flex-center align-items-lg-center justify-content-lg-center w-100 mx-auto pointer-events-none">
+                      <div class="promobox__content_inner position-absolute d-flex flex-center">
+                        <div>
+
+                          <div class="p-15 p-lg-30">
+
+                            <div class="mt-25 mt-sm-30 p-5">
+
+                              <a href="https://www.candle.com" class="promobox__btn-1 btn btn--secondary p-15">Get An inspiration
+                              </a>
+
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <style>
+
+        .product-collection__title>*, .product-compare__title>*, .product-wishlist__title>* {
+          font-size: 20px !important; 
+          font-weight: 500 !important;
+      }
+
+
+      </style>
+
+      
+      <br />
+      <br />
+
+
+
+      
+      <div id="shopify-section-1586457228978" class="shopify-section">
+        <div>
+          <div data-section-id="1586457228978" data-section-type="home-builder" class="container">
+
+            <div class="home-builder overflow-hidden">
+              <div class="row align-items-start justify-content-center">
+
+
+
+                <div class="home-builder-block-id-1586452593581-1 col-12 col-md-6 ">
+
+                  
+
+
+
+                  <div class="row">
+                    {%- for product in collections['diy_box'].products | sort_by: 'best-selling' limit: 12 -%}
+
+                    <div class="col-md-12 col-sm-12">
+                      {% include 'product-collection' %}
+                    </div>
+                    {%- endfor -%}
+
+                  </div>
+
+
+
+                </div>
+
+
+
+                <div class="home-builder-block-id-1586457228978-2 col-12 col-md-6">
+
+                  <a href="https://www.decantx.com/products/decantx-diy-box-3pcs-10ml-atomizer-perfume-kit"
+                    class="d-block">
+
+                    <div class="image-animation image-animation--from-none image-animation--to-center">
+                      <div class="rimage d-none d-sm-block" style="padding-top:100%; min-height: 1000px;">
+                        <img class="rimage__img rimage__img--cover entered loaded ls-is-cached lazyloaded"
+                          loading="eager"
+                          data-master="//cdn.shopify.com/s/files/1/0288/9875/4698/files/diy_side2_{width}x.progressive.jpg?v=1627333063"
+                          data-aspect-ratio="1.6382978723404256" data-aspect-ratio-original="1.6382978723404256"
+                          data-stretch-size="cover"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs="
+                          data-srcset="//cdn.shopify.com/s/files/1/0288/9875/4698/files/diy_side2_770x.progressive.jpg?v=1627333063 1x, //cdn.shopify.com/s/files/1/0288/9875/4698/files/diy_side2_1540x.progressive.jpg?v=1627333063 2x, //cdn.shopify.com/s/files/1/0288/9875/4698/files/diy_side2_2310x.progressive.jpg?v=1627333063 3x"
+                          alt="" data-ll-status="loaded"
+                          srcset="//cdn.shopify.com/s/files/1/0288/9875/4698/files/diy_side2_770x.progressive.jpg?v=1627333063 1x, //cdn.shopify.com/s/files/1/0288/9875/4698/files/diy_side2_1540x.progressive.jpg?v=1627333063 2x, //cdn.shopify.com/s/files/1/0288/9875/4698/files/diy_side2_2310x.progressive.jpg?v=1627333063 3x">
+                      </div>
+
+                      <div class="rimage d-sm-none">
+                        <img class="rimage__img rimage__img--cover entered loaded ls-is-cached lazyloaded"
+                          loading="eager"
+                          data-master="//cdn.shopify.com/s/files/1/0288/9875/4698/files/diy_side2_{width}x.progressive.jpg?v=1627333063"
+                          data-aspect-ratio="1.6382978723404256" data-aspect-ratio-original="1.6382978723404256"
+                          data-stretch-size="cover"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs="
+                          data-srcset="//cdn.shopify.com/s/files/1/0288/9875/4698/files/diy_side2_770x.progressive.jpg?v=1627333063 1x, //cdn.shopify.com/s/files/1/0288/9875/4698/files/diy_side2_1540x.progressive.jpg?v=1627333063 2x, //cdn.shopify.com/s/files/1/0288/9875/4698/files/diy_side2_2310x.progressive.jpg?v=1627333063 3x"
+                          alt="" data-ll-status="loaded"
+                          srcset="//cdn.shopify.com/s/files/1/0288/9875/4698/files/diy_side2_770x.progressive.jpg?v=1627333063 1x, //cdn.shopify.com/s/files/1/0288/9875/4698/files/diy_side2_1540x.progressive.jpg?v=1627333063 2x, //cdn.shopify.com/s/files/1/0288/9875/4698/files/diy_side2_2310x.progressive.jpg?v=1627333063 3x">
+                      </div>
+
+
+
+
+
+                    </div>
+                  </a>
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+
+
+      <div id="shopify-section-1586457571798" class="shopify-section">
+        <div>
+          <div data-section-id="1586457724169" data-section-type="home-builder" class="container">
+
+            <h3>The Premium Atomizers</h3>
+            <h5>The Premium Atomizers are now available for you to “do it yourself” in the color of your choice in a
+              pre- assembled set with all the necessary components to create your own decanted fragrance samples!
+            </h5>
+            <hr />
+            <div class="row mb-60">
+              {%- for product in collections['diy_pre'].products | sort_by: 'best-selling' limit: 12 -%}
+
+              <div class="col-12 col-lg-6">
+                {% include 'product-collection' %}
+              </div>
+              {%- endfor -%}
+            </div>
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+
+      <div id="shopify-section-1586457571798" class="shopify-section">
+        <div>
+          <div data-section-id="1586457724169" data-section-type="home-builder" class="container">
+            <h3> The Economy Atomizers </h3>
+            <h5>The Economy Atomizers are now available for you to “do it yourself” in the size of your choice as a
+              cost-effective method for creating your own decanted fragrance samples!
+            </h5>
+            <hr />
+            <div class="row mb-60">
+              {%- for product in collections['diy_eco'].products | sort_by: 'best-selling' limit: 12 -%}
+
+              <div class="col-12 col-lg-3">
+                {% include 'product-collection' %}
+              </div>
+              {%- endfor -%}
+            </div>
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>

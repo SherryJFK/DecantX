@@ -1,0 +1,339 @@
+{% include 'global-variables' %}
+<div class="page">
+
+<div
+    class="container {% if settings.offset_pages_margin_top_d > 0 %} mt-lg-{{ settings.offset_pages_margin_top_d }}{% endif %} mb-60{% if settings.offset_pages_margin_bottom_d > 0 %} mb-lg-{{ settings.offset_pages_margin_bottom_d }}{% endif %}">
+    <h1 class="h3 mt-30 text-center">{{ page.title }}</h1>
+    <div class="rte">
+
+        <h4>Fragrance is comprised of 3 main components; the aroma oil (which is the scent), water and alcohol. Perfumes
+            come in a few different concentrations which each serve a unique purpose, with specific, carefully planned
+            ratios to ensure maximum productivity. <em>Eau de Toilette, Eau de Parfum, Eau de Cologne, Eau Fraiche,
+                Extrait, Extrait de Parfum, or Parfum are the various concentrations</em> to choose from.
+            <em>Concentration refers to the perfume’s strength in terms of projection &amp; longevity</em>- perfume
+            concentration will influence how long the scent lasts on skin or in the air.</h4>
+        <p> </p>
+        <p> </p> <br /><br />
+        <p> </p>
+        <div class="custom-build w-100 d-flex">
+            <div class="position-relative h-100 w-100 mx-auto py-10 px-10">
+                <div class="h-100 d-flex flex-column">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-lg-3 mb-10 mb-lg-0 pr-lg-5 justify-content-center center"
+                            style="text-align: center;"> <a href="https://www.decantx.com/collections/parfum"> <img alt="Parfum" src="https://cdn.shopify.com/s/files/1/0288/9875/4698/files/parfum_150x300.progressive.jpg?v=1585625405" style="text-align: center;"> </a></div>
+                        <div class="col-12 col-lg-9 pl-lg-5 pr-lg-5 mb-10 mb-lg-0">
+                            <a href="https://www.decantx.com/collections/parfum">
+                                <h1><u>Extrait, Extrait de Parfum, or Parfum</u></h1>
+                            </a>
+                            <h4>Parfum, Extrait, or Extrait de Parfum all have the highest fragrance concentrations.
+                                These formulas will contain anywhere from 20 to 30 perfect perfume (or more) oil causing
+                                the concentration levels to be much greater. Parfums and extraits can last up to eight
+                                hours. Due to the high concentration, these potent variations are more expensive and
+                                usually come in smaller bottles however the fragrance lasts longer; therefore, requires
+                                less application.</h4>
+                            <ul>
+                                <li>Highest concentration level.</li>
+                                <li>20%-30% concentration.</li>
+                                <li>Very long lasting &amp; strong projection.</li>
+                                <li>6-8 Hour wear.</li>
+                            </ul>
+                            <hr />
+
+                            <div class="overflow-hidden w-100 align-self-center mt-25 mb-0" style="max-width: 1200px;">
+                                <div class="row no-gutters">
+                                    <div class="col-12 col-lg-3 mb-10 mb-lg-0 pr-lg-5">
+                                        <!-- Button #1 --> <a
+                                            class="custom-build__btn-1 btn--default btn w-100 justify-content-center"
+                                            href="https://www.decantx.com/collections/parfum/womens">
+                                            Shop Women's
+                                            Parfum </a></div>
+                                    <div class="col-12 col-lg-3 pl-lg-5 pr-lg-5 mb-10 mb-lg-0">
+                                        <!-- Button #2 --> <a
+                                            class="custom-build__btn-2 btn--default btn w-100 justify-content-center"
+                                            href="https://www.decantx.com/collections/parfum/mens"> Shop
+                                            Men's
+                                            Parfum</a></div>
+                                    <div class="col-12 col-lg-3 pl-lg-5 pr-lg-5 mb-10 mb-lg-0">
+                                        <!-- Button #3 --> <a
+                                            class="custom-build__btn-2 btn--default btn w-100 justify-content-center"
+                                            href="https://www.decantx.com/collections/parfum/unisex"> Shop Unisex
+                                            Parfum</a></div>
+
+                                    <div class="col-12 col-lg-3 pl-lg-5">
+                                        <!-- Button #4 --> <a
+                                            class="custom-build__btn-3 btn--default btn w-100 justify-content-center"
+                                            href="https://www.decantx.com/collections/parfum"> Shop
+                                            All Parfum
+                                            Fragrances </a></div>
+                                </div>
+                            </div>
+
+                            <br />
+                            <h4> <a href="https://www.decantx.com/collections/parfum"> Shop our Best Sellers Parfum
+                                    concentration Perfumes </a> </h4>
+
+                            <div class="row mb-60">
+                                {%- for product in collections['parfum'].products | sort_by: 'best-selling'  limit: 6 -%}
+                                <div class="col-12 col-lg-2">
+                                    {% include 'product-search' %}
+                                </div>
+                                {%- endfor -%}
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr />
+        <br><br><br>
+        <div class="custom-build w-100 d-flex">
+            <div class="position-relative h-100 w-100 mx-auto py-10 px-10">
+                <div class="h-100 d-flex flex-column">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-lg-3 mb-10 mb-lg-0 pr-lg-5 justify-content-center center"
+                            style="text-align: center;"><a href="https://www.decantx.com/collections/eau-de-parfum"><img alt="Eau de Parfum" src="https://cdn.shopify.com/s/files/1/0288/9875/4698/files/edp_150x300.progressive.jpg?v=1585625405" style="text-align: center;"></a></div>
+                        <div class="col-12 col-lg-9 pl-lg-5 pr-lg-5 mb-10 mb-lg-0">
+                            <a href="https://www.decantx.com/collections/eau-de-parfum">
+                                <h1><u>Eau de Parfum</u></h1>
+                            </a>
+                            <h4>Eau de parfum (aka EDP) has high concentration levels as well. The fragrance oil
+                                concentration is between 15 and 20 percent. Eau de parfum will last four to six hours
+                                without needing to reapply the scent. They are less expensive than the parfum because of
+                                the difference in oil to alcohol ratio. These scents are great options for everyday,
+                                long-lasting wear!</h4>
+                            <ul>
+                                <li>High concentration level.</li>
+                                <li>15%-20% concentration.</li>
+                                <li>Long lasting &amp; potent projection.</li>
+                                <li>5-6 Hour wear.</li>
+                            </ul>
+                            <hr />
+
+                            <div class="overflow-hidden w-100 align-self-center mt-25 mb-0" style="max-width: 1200px;">
+                                <div class="row no-gutters">
+                                    <div class="col-12 col-lg-3 mb-10 mb-lg-0 pr-lg-5">
+                                        <!-- Button #1 --> <a
+                                            class="custom-build__btn-1 btn--default btn w-100 justify-content-center"
+                                            href="https://www.decantx.com/collections/eau-de-parfum/womens">
+                                            Shop Women's
+                                            Eau de Parfum </a></div>
+                                    <div class="col-12 col-lg-3 pl-lg-5 pr-lg-5 mb-10 mb-lg-0">
+                                        <!-- Button #2 --> <a
+                                            class="custom-build__btn-2 btn--default btn w-100 justify-content-center"
+                                            href="https://www.decantx.com/collections/eau-de-parfum/mens"> Shop
+                                            Men's
+                                            Eau de Parfum</a></div>
+                                    <div class="col-12 col-lg-3 pl-lg-5 pr-lg-5 mb-10 mb-lg-0">
+                                        <!-- Button #3 --> <a
+                                            class="custom-build__btn-2 btn--default btn w-100 justify-content-center"
+                                            href="https://www.decantx.com/collections/eau-de-parfum/unisex"> Shop Unisex
+                                            Eau de Parfum</a></div>
+
+                                    <div class="col-12 col-lg-3 pl-lg-5">
+                                        <!-- Button #4 --> <a
+                                            class="custom-build__btn-3 btn--default btn w-100 justify-content-center"
+                                            href="https://www.decantx.com/collections/eau-de-parfum"> Shop
+                                            All Eau de Parfum
+                                            Fragrances </a></div>
+                                </div>
+                            </div>
+                            <br />
+                            <h4> <a href="https://www.decantx.com/collections/eau-de-parfum"> Shop our Best Sellers Eau
+                                    de Parfum
+                                    concentration Perfumes </a> </h4>
+
+                            <div class="row mb-60">
+                                {%- for product in collections['eau-de-parfum'].products | sort_by: 'best-selling'  limit: 6 -%}
+                                <div class="col-12 col-lg-2">
+                                    {% include 'product-search' %}
+                                </div>
+                                {%- endfor -%}
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr />
+        <br><br><br>
+        <div class="custom-build w-100 d-flex">
+            <div class="position-relative h-100 w-100 mx-auto py-10 px-10">
+                <div class="h-100 d-flex flex-column">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-lg-3 mb-10 mb-lg-0 pr-lg-5 justify-content-center center"
+                            style="text-align: center;"><a
+                                href="https://www.decantx.com/collections/eau-de-toilette"><img alt="Eau de Toilette" src="https://cdn.shopify.com/s/files/1/0288/9875/4698/files/edt_150x300.progressive.jpg?v=1585625405" style="text-align: center;"></a></div>
+                        <div class="col-12 col-lg-9 pl-lg-5 pr-lg-5 mb-10 mb-lg-0">
+                            <a href="https://www.decantx.com/collections/eau-de-toilette">
+                                <h1><u>Eau de Toilette</u></h1>
+                            </a>
+                            <h4>Eau de toilette (aka EDT) has a fragrance oil concentration between 5 and 15 percent.
+                                Compared to the pricier and more intense options, eau de toilette is a popular choice
+                                with good quality projection. Ideal for most skin types and will last approximately
+                                three to five hours.</h4>
+                            <ul>
+                                <li>Common concentration.</li>
+                                <li>5%-15% concentration.</li>
+                                <li>Performs well &amp; good projection.</li>
+                                <li>4-5 Hour wear.</li>
+                            </ul>
+                            <hr />
+                            <div class="overflow-hidden w-100 align-self-center mt-25 mb-0" style="max-width: 1200px;">
+                                <div class="row no-gutters">
+                                    <div class="col-12 col-lg-3 mb-10 mb-lg-0 pr-lg-5">
+                                        <!-- Button #1 --> <a
+                                            class="custom-build__btn-1 btn--default btn w-100 justify-content-center"
+                                            href="https://www.decantx.com/collections/eau-de-toilette/womens">
+                                            Shop Women's
+                                            Eau de Toilette </a></div>
+                                    <div class="col-12 col-lg-3 pl-lg-5 pr-lg-5 mb-10 mb-lg-0">
+                                        <!-- Button #2 --> <a
+                                            class="custom-build__btn-2 btn--default btn w-100 justify-content-center"
+                                            href="https://www.decantx.com/collections/eau-de-toilette/mens"> Shop
+                                            Men's
+                                            Eau de Toilette</a></div>
+                                    <div class="col-12 col-lg-3 pl-lg-5 pr-lg-5 mb-10 mb-lg-0">
+                                        <!-- Button #3 --> <a
+                                            class="custom-build__btn-2 btn--default btn w-100 justify-content-center"
+                                            href="https://www.decantx.com/collections/eau-de-toilette/unisex"> Shop
+                                            Unisex
+                                            Eau de Toilette</a></div>
+
+                                    <div class="col-12 col-lg-3 pl-lg-5">
+                                        <!-- Button #4 --> <a
+                                            class="custom-build__btn-3 btn--default btn w-100 justify-content-center"
+                                            href="https://www.decantx.com/collections/eau-de-toilette"> Shop
+                                            All Eau de Toilette
+                                            Fragrances </a></div>
+                                </div>
+                            </div>
+                            <br />
+                            <h4> <a href="https://www.decantx.com/collections/eau-de-toilette"> Shop our Best Sellers
+                                    Eau de Toilette
+                                    concentration Perfumes </a> </h4>
+
+                            <div class="row mb-60">
+                                {%- for product in collections['eau-de-toilette'].products | sort_by: 'best-selling'  limit: 6 -%}
+                                <div class="col-12 col-lg-2">
+                                    {% include 'product-search' %}
+                                </div>
+                                {%- endfor -%}
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr />
+        <br><br><br>
+        <div class="custom-build w-100 d-flex">
+            <div class="position-relative h-100 w-100 mx-auto py-10 px-10">
+                <div class="h-100 d-flex flex-column">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-lg-3 mb-10 mb-lg-0 pr-lg-5 justify-content-center center"
+                            style="text-align: center;"><a
+                                href="https://www.decantx.com/collections/eau-de-cologne"><img alt="Eau de Cologne" src="https://cdn.shopify.com/s/files/1/0288/9875/4698/files/edc_150x300.progressive.jpg?v=1585625405" style="text-align: center;"></a></div>
+                        <div class="col-12 col-lg-9 pl-lg-5 pr-lg-5 mb-10 mb-lg-0">
+                            <a href="https://www.decantx.com/collections/eau-de-cologne">
+                                <h1><u>Eau de Cologne</u></h1>
+                            </a>
+                            <h4>Eau de cologne (aka EDC) has a low concentration of aroma oil- only 2 to 4 percent. Like
+                                an after-shave or a body spray, eau de cologne will last about 2 hours on the skin and
+                                won’t project very far. It's less expensive than other formats because of the added
+                                water and alcohol content. This type of scent requires more applications; thus, the
+                                bottles are often larger. These are well suited for those with sensitive skin or
+                                delicate smell.</h4>
+                            <ul>
+                                <li>Low concentration.</li>
+                                <li>2%-4% concentration.</li>
+                                <li>Performs lightly &amp; soft projection.</li>
+                                <li>2-3 Hour wear.</li>
+                            </ul>
+                            <hr />
+                            <div class="overflow-hidden w-100 align-self-center mt-25 mb-0" style="max-width: 1200px;">
+                                <div class="row no-gutters">
+
+                                    <div class="col-12 col-lg-4 pl-lg-5 pr-lg-5 mb-10 mb-lg-0">
+                                        <!-- Button #2 --> <a
+                                            class="custom-build__btn-2 btn--default btn w-100 justify-content-center"
+                                            href="https://www.decantx.com/collections/eau-de-cologne/mens"> Shop
+                                            Men's Eau de Cologne</a></div>
+                                    <div class="col-12 col-lg-4 pl-lg-5 pr-lg-5 mb-10 mb-lg-0">
+                                        <!-- Button #3 --> <a
+                                            class="custom-build__btn-2 btn--default btn w-100 justify-content-center"
+                                            href="https://www.decantx.com/collections/eau-de-cologne/unisex"> Shop
+                                            Unisex
+                                            Eau de Cologne</a></div>
+
+                                    <div class="col-12 col-lg-4 pl-lg-5">
+                                        <!-- Button #4 --> <a
+                                            class="custom-build__btn-3 btn--default btn w-100 justify-content-center"
+                                            href="https://www.decantx.com/collections/eau-de-cologne"> Shop
+                                            All Eau de Cologne
+                                            Fragrances </a></div>
+                                </div>
+                            </div>
+                            <br />
+                            <h4> <a href="https://www.decantx.com/collections/eau-de-cologne"> Shop our Best Sellers Eau
+                                    de Cologne
+                                    concentration Perfumes </a> </h4>
+
+                            <div class="row mb-60">
+                                {%- for product in collections['eau-de-cologne'].products | sort_by: 'best-selling'  limit: 6 -%}
+                                <div class="col-12 col-lg-2">
+                                    {% include 'product-search' %}
+                                </div>
+                                {%- endfor -%}
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr />
+        <br><br><br>
+        <div class="custom-build w-100 d-flex">
+            <div class="position-relative h-100 w-100 mx-auto py-10 px-10">
+                <div class="h-100 d-flex flex-column">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-lg-3 mb-10 mb-lg-0 pr-lg-5 justify-content-center center"
+                            style="text-align: center;"><img alt="Eau Fraiche" src="https://cdn.shopify.com/s/files/1/0288/9875/4698/files/fraiche_150x300.progressive.jpg?v=1585625405" style="text-align: center;"></div>
+                        <div class="col-12 col-lg-9 pl-lg-5 pr-lg-5 mb-10 mb-lg-0">
+                            <h1><u>Eau Fraiche</u></h1>
+                            <h4>Eau fraiche has the lowest fragrance concentration. Not unlike an eau de cologne, this
+                                adaptation will only last a couple of hours. Eau fraiche means “<em>fresh water”</em>,
+                                so naturally these formulas are made up of mostly water. About 1 to 3 percent is perfume
+                                oil with a small amount of alcohol. These are ideal for warm weather and lighter days!
+                            </h4>
+                            <ul>
+                                <li>Lowest Concentration.</li>
+                                <li>1%-3% Concentration.</li>
+                                <li>Performs subtly &amp; soft projection.</li>
+                                <li>1-2 Hour wear.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </ul>
+
+
+    </div>
+</div>
+  
+  
+  </div>
+</div>

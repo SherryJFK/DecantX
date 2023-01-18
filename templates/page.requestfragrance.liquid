@@ -1,0 +1,56 @@
+{% include 'global-variables' %}
+<div class="page">
+  <div class="container {% if offset_pages_margin_top_d > 0 %} mt-lg-{{ offset_pages_margin_top_d }}{% endif %} mb-60{% if offset_pages_margin_bottom_d > 0 %} mb-lg-{{ offset_pages_margin_bottom_d }}{% endif %}">
+    <h1 class="page__title mt-30 text-center">{{ page.title }}</h1>
+    <div class="rte">
+      {% include 'parse-for-icons' content: page.content %}
+ 
+    <br />
+
+
+    <div class="col-12 col-md-60">
+ 
+      {% form 'contact' %}
+        {%- if form.posted_successfully? -%}
+            <p class="form-success">{{ 'contact.form.post_success' | t }}</p>
+        {%- endif -%}
+        <label for="ContactFormName" class="label-required">{{ 'contact.form.name_title' | t }}</label>
+        <input type="text"
+               name="contact[name]"
+               id="ContactFormName"
+               placeholder="{{ 'contact.form.name_placeholder' | t }}"
+               value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}"
+               required="required">
+        <label for="ContactFormEmail" class="label-required">{{ 'contact.form.email_title' | t }}</label>
+        <input type="email"
+               name="contact[email]"
+               id="ContactFormEmail"
+               placeholder="{{ 'contact.form.email_placeholder' | t }}"
+               value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+               spellcheck="false"
+               autocomplete="off"
+               autocapitalize="off"
+               required="required">
+       
+        <label for="ContactFormMessage" class="label-required"> Please Fill in some scent info </label>
+        <textarea rows="8"
+                  name="contact[body]"
+                  id="contactFormMessage"
+                  placeholder="Your comment"
+                  required="required">
+          {%- if form.body -%}
+            {{ form.body }}
+          {%- endif -%}
+        </textarea>
+        {% include 'form-get-message' %}
+        <div class="pt-10">
+          <button type="submit" class="btn btn--secondary"><i class="mr-5">{% include 'icon-theme-196' %}</i>{{ 'contact.form.send' | t }}</button>
+        </div>
+      {% endform %}
+      
+      
+      <br /><br /><br />
+    </div>
+  </div>
+</div>
+</div>

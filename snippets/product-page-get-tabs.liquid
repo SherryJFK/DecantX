@@ -1,0 +1,594 @@
+<!-- snippets/product-page-get-tabs.liquid -->
+{%- if section.settings.show_tab_reviews and settings.reviews_type != 'disable' -%}
+    {% capture reviews_html %}
+        {%- if settings.reviews_type == 'default' -%}
+            <div id="shopify-product-reviews" data-id="{{ product.id }}">{{ metafields.spr.reviews }}</div>
+        {%- elsif settings.reviews_type == 'growave' and settings.app_growave_enable == true -%}
+            {% capture the_snippet_reviews %}{% render 'socialshopwave-widget-recommends' with 1 %}{% endcapture %}
+            {%- unless the_snippet_reviews contains 'Liquid error' -%}
+                {{ the_snippet_reviews }}
+            {%- endunless -%}
+        {%- elsif settings.reviews_type == 'loox' -%}
+            <div id="looxReviews" data-product-id="{{product.id}}" class="loox-reviews-default">{{ product.metafields.loox.reviews }}</div>
+        {%- endif -%}
+    {%- endcapture -%}
+{%- endif -%}
+{% capture tabs_html %}
+    {%- assign active_tab = ' data-active="true"' -%}
+    {%- assign custom_tab_index = 1 -%}
+    {%- if section.settings.show_tab_description -%}
+        {%- if description != blank -%}
+            <div class="tabs__btn{% if active_tab %} active{% endif %}" data-js-tabs-btn{{ active_tab }}>{{ 'products.product.tabs.description' | t }}</div>
+            {% capture tabs_body_html %}
+                {{ tabs_body_html }}
+                <div{% if active_tab %} class="active"{% endif %} data-js-tabs-tab>
+                    <span data-js-tabs-btn-mobile>{{ 'products.product.tabs.description' | t }} <i>{% render 'icon-theme-188' %}</i></span>
+                    
+                  
+                  
+                  
+          
+
+   
+                  
+                  <div class="tabs__content rte overflow-hidden" data-js-tabs-content{% if active_tab %} style="display: block;"{% assign active_tab = null %}{% endif %}>
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                          
+                                                    {%- if product.tags contains 'Giftbox' or  product.tags contains 'DIY'  -%}
+                          
+                          
+                           {% include 'parse-for-icons' content: description %}
+
+                          
+                          
+                          
+                             {%- endif -%}
+
+                          
+
+                        
+                     
+                                        {% unless  product.tags contains 'Giftbox' or   product.tags contains 'DIY' %}	
+
+                                              
+    <div class="custom-build w-100 d-flex">
+        <div class="position-relative h-100 w-100 mx-auto py-10 px-10">
+            <div class="h-100 d-flex flex-column">
+                <div class="row no-gutters">
+                  
+                    <div class="col-12 col-lg-6 pl-lg-0 pr-lg-10 mb-10 mb-lg-0" style="padding: 5px;">
+                      
+                      
+                      <h3> About the Fragrance </h3> 
+
+                      
+                            {% include 'parse-for-icons' content: description %}
+                    </div>
+                  
+                <div class="col-12 col-lg-6 mb-10 mb-lg-0 pr-lg-6 justify-content-center center">
+                <div style="padding: 5px;">
+                 
+                  
+                  
+                                                      <style>
+                                                .dxspc th,
+                                                .dxspc td {
+                                                    padding: 0.75rem;
+                                                    vertical-align: top;
+                                                    border-top: 1px solid #ddd;
+                                                }
+
+                                                .dxspc th {
+                                                    min-width: 175px;
+                                                }
+
+                                                .dxspc a:hover {
+                                                    text-decoration: underline !important;
+                                                }
+
+                                                .dxspcf {
+                                                    border: none !important;
+                                                }
+                                              .fragspeci {
+    vertical-align: middle;
+}   
+                  
+                                                        
+@media only screen and (max-width: 600px) {  .spec_pad { padding-left: 0px; } }
+
+@media only screen and (min-width: 600px) {  .spec_pad { padding-left: 0px; } }
+
+@media only screen and (min-width: 768px) {  .spec_pad { padding-left: 0px; } }
+
+@media only screen and (min-width: 992px) {  .spec_pad { padding-left: 25px; } }
+
+@media only screen and (min-width: 1200px) {  .spec_pad { padding-left: 35px; } }
+                                              
+                                              
+                                              
+                                              
+                                                
+                                                
+                                            </style>
+
+                  
+                  
+                  
+                   <div class="spec_pad">
+
+        
+                      <h3> Scent Intel </h3>
+                     <hr />
+
+
+                                            <table class="dxspc">
+                                                <tbody>
+
+                                                    <tr
+                                                        style="display: none{{ product.metafields.fragrance.family  | split: " " | first   }};">
+
+                                                        <th class="dxspcf"><b class="fragspecb"><i class="fragspeci">{%
+                                                                    render
+                                                                    'icon-theme-123' %}</i> Scent Accords: </b></th>
+                                                        <td class="dxspcf">
+
+                                                          
+                                                          
+                                                          {% assign  fam_val  = product.metafields.fragrancex.family.value | first %}
+                                                          
+                                                         
+                                                          {% if fam_val == null or fam_val == '' %}
+                                                          
+                                                          
+                                                            <script>
+                                                                var names = '{{ product.metafields.fragrance.family }}';
+                                                                var nameArr = names.split(', ');
+                                                                
+                                                                document.write("<a href=\"https://www.decantx.com/collections/" + nameArr[0].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[0] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[1].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[1] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[2].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[2] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[3].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[3] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[4].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[4] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[5].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[5] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[6].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[6] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[7].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[7] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[8].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[8] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[9].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[9] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[10].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[10] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[11].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[11] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[12].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[12] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[13].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[13] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[14].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[14] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[15].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[15] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[16].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[16] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[17].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[17] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[18].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[18] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[19].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[19] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[20].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[20] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[21].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[21] + "</a>");
+                                                                document.write(nameArr[nameArr.length - 1]);
+                                                            </script>
+                                                          
+                                                          
+                                                          
+                                                          
+                                                     {% else %}
+
+                                                      {% for i in product.metafields.fragrancex.family.value %}
+          
+          {% if forloop.last == false %}
+          <a href="/collections/{{ i | handleize }}" rel="tag">{{ i }}</a>,  
+          {% endif %}
+          
+          {% if forloop.last == true %}
+          <a href="/collections/{{ i | handleize }}" rel="tag">{{ i }}</a>
+          {% endif %}
+          
+		{% endfor %}
+                                                          
+                    
+                                                          
+                                                                {% endif %}
+                                                          
+                                                         
+                                                        </td>
+                                                    </tr>
+                                                    <tr
+                                                        style="display: none{{ product.metafields.fragrance.note_top  | split: " " | first   }};">
+                                                        <th>
+
+
+                                                            <b class="fragspecb"> <i class="fragspeci">{% render
+                                                                    'icon-theme-700' %}</i> Top Note: </b>
+                                                        </th>
+                                                        <td> {{ product.metafields.fragrance.note_top }} </td>
+                                                    </tr>
+
+                                                    <tr
+                                                        style="display: none{{ product.metafields.fragrance.note_middle | split: " "  | first   }};">
+                                                        <th><b class="fragspecb"> <i class="fragspeci">{% render
+                                                                    'icon-theme-701' %}</i> Heart Note: </b></th>
+                                                        <td>{{ product.metafields.fragrance.note_middle }} </td>
+                                                    </tr>
+                                                    <tr
+                                                        style="display: none{{ product.metafields.fragrance.note_base  | split: " "  | first   }};">
+                                                        <th><b class="fragspecb"><i class="fragspeci">{% render
+                                                                    'icon-theme-702' %}</i> Base Note: </b></th>
+                                                        <td>{{ product.metafields.fragrance.note_base }} </td>
+                                                    </tr>
+                                                    <tr
+                                                        style="display: none{{ product.metafields.fragrance.year  | split: " " | first   }};">
+                                                        <th><b class="fragspecb"><i class="fragspeci">{% render
+                                                                    'icon-theme-142' %}</i> Release Year: </b></th>
+                                                        <td><a
+                                                                href="https://www.decantx.com/collections/{{ product.metafields.fragrance.year  | handleize  }}">{{
+                                                            product.metafields.fragrance.year }}</a></td>
+                                                    </tr>
+                                                    <tr
+                                                        style="display: none{{ product.metafields.fragrance.gender  | split: " " | first   }};">
+                                                        <th><b class="fragspecb"><i class="fragspeci">{% render
+                                                                    'icon-theme-202' %}</i> Gender: </b></th>
+                                                        <td><a
+                                                                href="https://www.decantx.com/collections/{{ product.metafields.fragrance.gender  | handleize  }}">{{
+                                                            product.metafields.fragrance.gender }}</a></td>
+                                                    </tr>
+                                                    <tr
+                                                        style="display: none{{ product.metafields.fragrance.niche | split: " "  | first   }};">
+                                                        <th><b class="fragspecb"><i class="fragspeci">{% render
+                                                                    'icon-theme-050' %}</i> Brand Category: </b></th>
+                                                        <td><a
+                                                                href="https://www.decantx.com/collections/{{ product.metafields.fragrance.niche | handleize }}">
+                                                            {{ product.metafields.fragrance.niche }}</a></td>
+                                                    </tr>
+                                                    <tr
+                                                        style="display: none{{ product.metafields.fragrance.concentration | split: " "  | first   }};">
+                                                        <th><b class="fragspecb"><i class="fragspeci">{% render
+                                                                    'icon-theme-128' %}</i> Concentration: </b></th>
+                                                        <td><a
+                                                                href="https://www.decantx.com/collections/{{ product.metafields.fragrance.concentration  | handleize  }}">
+                                                            {{ product.metafields.fragrance.concentration }}</a></td>
+                                                    </tr>
+                                                    <tr
+                                                        style="display: none{{ product.metafields.fragrance.season | split: " "  | first   }};">
+                                                        <th><b class="fragspecb"><i class="fragspeci">{% render
+                                                                    'icon-theme-104' %}</i> Season: </b></th>
+                                                        <td>
+                                                          
+                                                          
+                                                          
+                                                                          
+                                                          {% assign  sea_val  = product.metafields.fragrancex.season.value | first %}
+                                                          
+                                                         
+                                                          {% if sea_val == null or fam_val == '' %}
+                                                          
+                                                          
+                                                          
+                                                          
+                                                            <script>
+                                                                var names = '{{ product.metafields.fragrance.season }}';
+                                                                var nameArr = names.split(', ');
+                                                                
+                                                                document.write("<a href=\"https://www.decantx.com/collections/" + nameArr[0].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[0] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[1].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[1] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[2].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[2] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[3].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[3] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[4].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[3] + "</a>");
+                                                                document.write(nameArr[nameArr.length - 1]); // Clean
+                                                            </script>
+                                                          
+                                                          
+                                                                                                  {% else %}
+
+                                                      {% for i in product.metafields.fragrancex.season.value %}
+          
+          {% if forloop.last == false %}
+          <a href="/collections/{{ i | handleize }}" rel="tag">{{ i }}</a>,  
+          {% endif %}
+          
+          {% if forloop.last == true %}
+          <a href="/collections/{{ i | handleize }}" rel="tag">{{ i }}</a>
+          {% endif %}
+          
+		{% endfor %}
+                                                          
+                    
+                                                          
+                                                                {% endif %}
+                                                          
+                                                          
+                                                          
+                                                        </td>
+                                                    </tr>
+                                                    <tr
+                                                        style="display: none{{ product.metafields.fragrance.time | split: " "  | first   }};">
+                                                        <th><b class="fragspecb"><i class="fragspeci">{% render
+                                                                    'icon-theme-306' %}</i> Day or Night: </b></th>
+                                                        <td>
+                                                          
+                                                          
+                                                                          
+                                                          {% assign  tim_val  = product.metafields.fragrancex.time.value | first %}
+                                                          
+                                                         
+                                                          {% if tim_val == null or fam_val == '' %}
+                                                          
+                                                          
+
+                                                            <script>
+                                                                var names = '{{ product.metafields.fragrance.time }}';
+                                                                var nameArr = names.split(', ');
+                                                                console.log(nameArr);
+                                                                document.write("<a href=\"https://www.decantx.com/collections/" + nameArr[0].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[0] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[1].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[1] + "</a>");
+                                                            </script>
+                                                          
+                                                          
+                                                                              
+                                                                                                  {% else %}
+
+                                                      {% for i in product.metafields.fragrancex.time.value %}
+          
+          {% if forloop.last == false %}
+          <a href="/collections/{{ i | handleize }}" rel="tag">{{ i }}</a>,  
+          {% endif %}
+          
+          {% if forloop.last == true %}
+          <a href="/collections/{{ i | handleize }}" rel="tag">{{ i }}</a>
+          {% endif %}
+          
+		{% endfor %}
+                                                          
+                    
+                                                          
+                                                                {% endif %}
+                                                          
+                                                        </td>
+                                                    </tr>
+                                                    <tr
+                                                        style="display: none{{ product.metafields.fragrance.perfumer  | split: " "  | first   }};">
+                                                        <th><b class="fragspecb"><i class="fragspeci">{% render
+                                                                    'icon-theme-703' %} </i> Perfumer: </b></th>
+                                                        <td>
+
+
+                                                                {% assign  per_val  = product.metafields.fragrancex.perfumer.value | first %}
+                                                          
+                                                         
+                                                          {% if per_val == null or fam_val == '' %}
+                                                          
+                                                          
+                                                            <script>
+                                                                var names = '{{ product.metafields.fragrance.perfumer }}';
+                                                                var nameArr = names.split(', ');
+                                                                
+                                                                document.write("<a href=\"https://www.decantx.com/collections/" + nameArr[0].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[0] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[1].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[1] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[2].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[2] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[3].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[3] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[4].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[4] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[5].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[5] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[6].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[6] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[7].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[7] + "</a>");
+                                                                document.write(", <a href=\"https://www.decantx.com/collections/" + nameArr[8].toLowerCase().replace(/\s/g, "-") + "\">" + nameArr[8] + "</a>");
+                                                                document.write(nameArr[nameArr.length - 1]);
+                                                            </script>
+                                                          
+                                                                                                                      {% else %}
+
+                                                      {% for i in product.metafields.fragrancex.perfumer.value %}
+          
+          {% if forloop.last == false %}
+          <a href="/collections/{{ i | handleize }}" rel="tag">{{ i }}</a>,  
+          {% endif %}
+          
+          {% if forloop.last == true %}
+          <a href="/collections/{{ i | handleize }}" rel="tag">{{ i }}</a>
+          {% endif %}
+          
+		{% endfor %}
+                                                          
+                    
+                                                          
+                                                                {% endif %}
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr
+                                                        style="display: none{{ product.metafields.fragrance.country  | split: " " | first   }};">
+                                                        <th><b class="fragspecb"><i class="fragspeci">{% render
+                                                                    'icon-theme-031' %}</i> Country: </b></th>
+                                                        <td><a
+                                                                href="https://www.decantx.com/collections/{{ product.metafields.fragrance.country | handleize }}">{{
+                                                            product.metafields.fragrance.country }}</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                  
+                  
+
+
+                  
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+                          
+                          
+                          
+                          
+                          
+                                        {% endunless %}	
+
+                                                                  {% unless product.tags contains 'DIY' %}	
+
+                      
+                              
+                    <br /> <hr />     <br />      <br /> 
+                    
+                    <div style"padding: 10px;">
+                  
+                  
+                      <h5> <b> Decantx is an independent entity and NOT affiliated, connected to or associated with the manufacturer or designer. Decantx rebottles authentic fragrances from the original bottle into our sample bottles and atomizers. </b> </h5>
+
+                  </div>
+                    
+                                                            {% endunless %}	
+
+                    
+                  
+                  
+                  
+                  
+                  
+                  </div>
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            {% endcapture %}
+            {%- assign active_tab = null -%}
+        {%- endif -%}
+    {%- endif -%}
+    {%- for block in section.blocks -%}
+        {%- if block.type == 'tab_custom' -%}
+            <div class="tabs__btn{% if active_tab %} active{% endif %}" data-js-tabs-btn{{ active_tab }}>{{ block.settings.title }}</div>
+            {% capture tabs_body_html %}
+                {{ tabs_body_html }}
+                {%- case custom_tab_index -%}
+                    {%- when 2 %}{% assign custom_tab_default_page = 'include-product-tab-custom-html-2' -%}
+                    {%- else %}{% assign custom_tab_default_page = 'include-product-tab-custom-html' -%}
+                {%- endcase -%}
+                <div{% if active_tab %} class="active"{% endif %} data-js-tabs-tab>
+                    <span data-js-tabs-btn-mobile>{{ block.settings.title }} <i>{% render 'icon-theme-188' %}</i></span>
+                    <div class="tabs__content rte overflow-hidden" data-js-tabs-content{% if active_tab %} style="display: block;"{% assign active_tab = null %}{% endif %}>
+                        {% include 'parse-page-html-content' with default_page: custom_tab_default_page page_content: block.settings.page_content html: block.settings.content %}
+                    </div>
+                </div>
+            {% endcapture %}
+            {%- assign custom_tab_index = custom_tab_index | plus: 1 -%}
+            {%- assign active_tab = null -%}
+        {%- elsif block.type == 'tab_klarna_app' -%}
+            {%- if settings.app_klarna_enable -%}
+                <div class="tabs__btn{% if active_tab %} active{% endif %}" data-js-tabs-btn{{ active_tab }} data-tab="klarna">{{ 'products.product.tabs.klarna' | t }}</div>
+                {% capture tabs_body_html %}
+                    {{ tabs_body_html }}
+                    <div{% if active_tab %} class="active"{% endif %} data-js-tabs-tab>
+                        <span data-js-tabs-btn-mobile>{{ 'products.product.tabs.klarna' | t }} <i>{% render 'icon-theme-188' %}</i></span>
+                        <div class="tabs__content" data-js-tabs-content{% if active_tab %} style="display: block;"{% assign active_tab = null %}{% endif %}>
+                            <div class="d-flex px-15">
+                                <div class="{{ block.settings.class_name }}"></div>
+                            </div>
+                        </div>
+                    </div>
+                {% endcapture %}
+                {%- assign active_tab = null -%}
+            {%- endif -%}
+        {%- endif -%}
+    {%- endfor -%}
+    {%- assign metafield_namespaces = 'tab,tab1,tab2,tab3' | split: ',' -%}               
+    {%- for ns in metafield_namespaces -%}
+        {%- if metafields[ns].title and metafields[ns].content -%}
+            <div class="tabs__btn{% if active_tab %} active{% endif %}" data-js-tabs-btn{{ active_tab }}>{{ metafields[ns].title }}</div>
+            {% capture tabs_body_html %}
+                {{ tabs_body_html }}
+                <div{% if active_tab %} class="active"{% endif %} data-js-tabs-tab>
+                    <span data-js-tabs-btn-mobile>{{ metafields[ns].title }} <i>{% render 'icon-theme-188' %}</i></span>
+                    <div class="tabs__content rte overflow-hidden" data-js-tabs-content{% if active_tab %} style="display: block;"{% assign active_tab = null %}{% endif %}>
+                        {% include 'parse-for-icons' content: metafields[ns].content %}
+                    </div>
+                </div>
+            {% endcapture %}
+            {%- assign active_tab = null -%}
+        {%- endif -%}
+    {%- else -%}
+        {%- break -%}
+    {%- endfor -%}
+    {%- if section.settings.show_tab_reviews -%}
+        {%- if settings.reviews_type != 'disable' -%}
+            <div class="tabs__btn{% if active_tab %} active{% endif %}" data-js-tabs-btn{{ active_tab }} data-tab="reviews">{{ 'products.product.tabs.reviews' | t }}</div>
+            {% capture tabs_body_html %}
+                {{ tabs_body_html }}
+                <div{% if active_tab %} class="active"{% endif %} data-js-tabs-tab>
+                    <span data-js-tabs-btn-mobile>{{ 'products.product.tabs.reviews' | t }} <i>{% render 'icon-theme-188' %}</i></span>
+                    <div class="tabs__content" data-js-tabs-content{% if active_tab %} style="display: block;"{% assign active_tab = null %}{% endif %}>
+                        <div class="tabs-review">
+                            {{ reviews_html }}
+                        </div>
+                    </div>
+                    </div>
+            {% endcapture %}
+            {%- assign active_tab = null -%}
+        {%- endif -%}
+    {%- endif -%}
+{%- endcapture -%}
+{%- if section.settings.tabs_type == 'tabs' -%}
+    {%- if active_tab == null -%}
+        <tabs-element class="tabs product-tabs d-block" data-type="{% if template_layout == '1' or template_layout == '5' %}horizontal{% else %}mobile{% endif %}" data-scrolling-to-opened-tab="{{ section.settings.scrolling_to_opened_tab }}">
+            <div class="tabs__head" data-js-tabs-head>
+                <div class="tabs__slider" data-js-tabs-slider>
+                    {{ tabs_html }}
+                </div>
+                <div class="tabs__nav tabs__nav--prev" data-js-tabs-nav-prev><i>{% render 'icon-theme-006' %}</i></div>
+                <div class="tabs__nav tabs__nav--next" data-js-tabs-nav-next><i>{% render 'icon-theme-007' %}</i></div>
+            </div>
+            <div class="tabs__body">
+                {{ tabs_body_html }}
+            </div>
+        </tabs-element>
+    {%- else -%}
+        {%- if request.design_mode -%}
+            <div class="w-100 h5 py-20 m-0 text-center">Add tabs in the settings Product page -> + Add block</div>
+        {%- endif -%}
+    {%- endif -%}
+{%- elsif section.settings.tabs_type == 'sheet' -%}
+    {%- if section.settings.show_tab_description -%}
+        {%- if description != blank -%}
+            <div class="pt-10 mt-40 mt-lg-100">
+                <div class="rte overflow-hidden">
+                    {% include 'parse-for-icons' content: description %}
+                </div>
+            </div>
+            {%- assign has_tab_description = true -%}
+        {%- endif -%}
+    {%- endif -%}
+    {%- if section.settings.show_tab_reviews -%}
+        <div class="pt-10 {% if has_tab_description %}mt-40{% else %}mt-40 mt-lg-100{% endif %}">
+            {{ reviews_html }}
+        </div>
+    {%- endif -%}
+{%- endif -%}

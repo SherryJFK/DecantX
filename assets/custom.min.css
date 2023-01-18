@@ -1,0 +1,443 @@
+#ssw-fave-list-widget {
+  display: none;
+}      
+
+
+
+
+
+div.product-options__value[data-value="10mlblackatomizer"], 
+div.product-options__value[data-value="10mlgoldatomizer"],
+div.product-options__value[data-value="10mlsilveratomizer"],
+div.product-options__value[data-value="10mlpinkatomizer"],
+div.product-options__value[data-value="10mlblueatomizer"],
+div.product-options__value[data-value="10mlnavyblueatomizer"],
+div.product-options__value[data-value="10mllightblueatomizer"],
+div.product-options__value[data-value="10mlnavyatomizer"],
+div.product-options__value[data-value="10mlredatomizer"],
+div.product-options__value[data-value="10mlgreenatomizer"],
+div.product-options__value[data-value="10mlpurpleatomizer"],
+div.product-options__value[data-value="5mlblackatomizer"], 
+div.product-options__value[data-value="5mlgoldatomizer"],
+div.product-options__value[data-value="5mlsilveratomizer"],
+div.product-options__value[data-value="5mlpinkatomizer"],
+div.product-options__value[data-value="5mlpurpleatomizer"],
+div.product-options__value[data-value="5mlredatomizer"],
+div.product-options__value[data-value="5mlgreenatomizer"],
+div.product-options__value[data-value="5mllightblueatomizer"],
+div.product-options__value[data-value="5mlnavyblueatomizer"],
+div.product-options__value[data-value="5mlnavyatomizer"],
+div.product-options__value[data-value="5mlblueatomizer"] {
+    
+  width: 35  !important;
+    border-radius: 5px !important;
+    height: 35px  !important;  
+  	font-size: 0px  !important;  
+    color: transparent;
+	font: 0/0 a  !important;  
+    text-shadow: none  !important;  
+    background-color: transparent;
+    border: 0;
+}
+
+
+
+
+
+
+div.product-options__value[data-value="10mlblackatomizer"], 
+div.product-options__value[data-value="5mlblackatomizer"] {
+  
+  background: black; }
+
+
+div.product-options__value[data-value="10mlsilveratomizer"], 
+div.product-options__value[data-value="5mlsilveratomizer"] {
+  
+  background: silver; }
+
+
+
+div.product-options__value[data-value="10mlgoldatomizer"],
+div.product-options__value[data-value="5mlgoldatomizer"] {
+  background: gold; }
+
+
+
+div.product-options__value[data-value="10mlpinkatomizer"],
+div.product-options__value[data-value="5mlpinkatomizer"] {
+
+  background: pink; }
+
+
+div.product-options__value[data-value="10mlpurpleatomizer"],
+div.product-options__value[data-value="5mlpurpleatomizer"] {
+
+  background: purple; }
+
+div.product-options__value[data-value="10mlredatomizer"],
+div.product-options__value[data-value="5mlredatomizer"] {
+
+  background: #BD2100 ; }
+
+
+
+div.product-options__value[data-value="10mllightblueatomizer"],
+div.product-options__value[data-value="5mllightblueatomizer"] {
+
+  background: #AED6F1	; }
+
+
+
+div.product-options__value[data-value="10mlgreenatomizer"],
+div.product-options__value[data-value="5mlgreenatomizer"] {
+
+  background: #2ECC71 ; }
+
+
+div.product-options__value[data-value="10mlblueatomizer"],
+div.product-options__value[data-value="5mlblueatomizer"],
+div.product-options__value[data-value="10mlnavyblueatomizer"],
+div.product-options__value[data-value="5mlnavyblueatomizer"],
+div.product-options__value[data-value="10mlnavyatomizer"],
+div.product-options__value[data-value="5mlnavyatomizer"] {
+
+  background: navy; }
+
+
+
+#MainContent {
+    box-shadow: 0 10px 10px 0px #d0d0d0 !important;
+    padding: 0px 0px 15px 0px;
+}
+
+.ssw-faveit, .ssw-faveiticon {
+      position: relative !important;
+}
+
+.header--style-3 .header__line--colorize-2 {
+    background-color: #141414;
+    border-bottom: none;
+}
+
+
+.footer {
+    background-color: #f4f4f4 !important;
+}
+
+
+.menu:not(.menu--vertical) .menu__panel > .menu__item > a {
+    padding-right: 8px !important;
+}
+
+.menu:not(.menu--vertical) .menu__panel > .menu__item > a:hover {
+  color: #ccc !important; }
+
+.header--style-3 .header__content--sticky .header__btn-wishlist, .header--style-3 .header__content--sticky .header__btn-wishlist:visited, .header--style-3 .header__content--sticky .header__btn-wishlist:active, .header--style-3 .header__content--sticky .header__btn-wishlist:link, .header--style-3 .header__content--sticky .header__btn-compare, .header--style-3 .header__content--sticky .header__btn-compare:visited, .header--style-3 .header__content--sticky .header__btn-compare:active, .header--style-3 .header__content--sticky .header__btn-compare:link, .header--style-3 .header__content--sticky .header__btn-cart, .header--style-3 .header__content--sticky .header__btn-cart:visited, .header--style-3 .header__content--sticky .header__btn-cart:active, .header--style-3 .header__content--sticky .header__btn-cart:link {
+    color: #fff !important;
+}
+
+.header--style-3 .header__content--sticky .header__btn-wishlist > i .icon, .header--style-3 .header__content--sticky .header__btn-compare > i .icon, .header--style-3 .header__content--sticky .header__btn-cart > i .icon {
+    fill: #fff !important;
+}
+
+
+@media (max-width: 1500px) {
+   
+.ssw-reward-tab.ssw-reward-tab-right {
+  display: None !important;
+}
+  
+.ssw-reward-tab.ssw-reward-tab-left {
+  display: None !important;
+}   
+   
+}
+
+
+
+.icon15 {
+    width: 15px;
+    min-width: 15px;
+    min-height: 15px;
+}
+
+
+.fragspecb {
+  color: #000; 
+  font-size: 16px; 
+  font-weight: 600 
+}
+
+.fragspeci {
+  width: 22px;
+}
+
+.header__tape--style-3 {
+    background: linear-gradient(to right, #f8bbc2, #f56a62, #fcb3d0, #d0e7f8, #d5e7f5, #a8ded5) !important;
+}
+
+.ssw-reward-tab, .ssw-reward-tab.ssw-reward-tab-left, .ssw-reward-tab-left{	
+  display: none !important; }
+
+.ssw-reviews-widget {	
+  display: none !important; }
+
+
+@media (max-width: 1024px) {
+  
+.product-collection__buttons-section {
+     margin-left: 0px !important;
+    margin-right: 0 !important;
+}   
+   
+}
+
+
+#shopify-section-template--15840688668885__main div.product-options__value[data-value="10mlredatomizer"], 
+#shopify-section-template--15840688668885__main div.product-options__value[data-value="10mlgreenatomizer"], 
+#shopify-section-template--15840688668885__main div.product-options__value[data-value="10mlpurpleatomizer"], 
+#shopify-section-template--15840688668885__main div.product-options__value[data-value="10mllightblueatomizer"], 
+#shopify-section-template--15840688668885__main div.product-options__value[data-value="10mlnavyatomizer"], 
+#shopify-section-template--15840688668885__main div.product-options__value[data-value="10mlblackatomizer"], 
+#shopify-section-template--15840688668885__main div.product-options__value[data-value="10mlgoldatomizer"],
+#shopify-section-template--15840688668885__main div.product-options__value[data-value="10mlsilveratomizer"],
+#shopify-section-template--15840688668885__main div.product-options__value[data-value="10mlpinkatomizer"],
+#shopify-section-template--15840688668885__main div.product-options__value[data-value="10mlblueatomizer"],
+#shopify-section-template--15840688668885__main div.product-options__value[data-value="5mlpurpleatomizer"],
+#shopify-section-template--15840688668885__main div.product-options__value[data-value="5mlredatomizer"],
+#shopify-section-template--15840688668885__main div.product-options__value[data-value="5mlgreenatomizer"],
+#shopify-section-template--15840688668885__main div.product-options__value[data-value="5mllightblueatomizer"],
+#shopify-section-template--15840688668885__main div.product-options__value[data-value="10mlrefillable"], 
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="10mlredatomizer"], 
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="10mlgreenatomizer"], 
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="10mlpurpleatomizer"], 
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="10mllightblueatomizer"], 
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="10mlnavyatomizer"], 
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="10mlblackatomizer"], 
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="10mlgoldatomizer"],
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="10mlsilveratomizer"],
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="10mlpinkatomizer"],
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="10mlblueatomizer"],
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="5mlpurpleatomizer"],
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="5mlredatomizer"],
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="5mlgreenatomizer"],
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="5mllightblueatomizer"],
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="10mlrefillable"], 
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="5mlrefillable"]{
+      display: none !important;
+  } 
+
+
+
+
+.mw-gp__table__cell--product a {
+        cursor: default;
+        pointer-events: none;        
+        text-decoration: none;
+    }
+
+
+:root {
+    --gw_custom_forms_rating_color: #000: }
+
+ 
+
+
+.ssw-stars-avg-bar{
+  background-color: #000; }
+
+ul:not(.list-unstyled):not([list-unstyled]) li::before {
+  display: unset; }
+      
+ 
+.gw-container .gw-btn-bg.gw-review-btn {
+  color: #fff !important; }
+      
+      
+.review-wrapp-btn {
+    display: block !important;
+}      
+      
+  
+.product-gallery__blockratio_content {
+  padding-top: 0px !important;
+}
+      
+.text-countdown {
+  background: none !important; }
+      
+      
+#widget-fave-html .ssw-fave-btn-content {
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: #555 !important;
+  border-color: #ccc  !important;
+  border-radius: 5px  !important;  }
+      
+
+      
+#widget-fave-html .ssw-fave-btn-content:hover {
+  background: #eee;
+}
+      
+      
+#widget-fave-html .ssw-fave-btn-counter, #widget-fave-html .ssw-fave-btn-counter::before {
+  border-radius: 0;
+  color: #555;
+  border-color: #ccc;
+}
+      
+#pwf div {
+  padding: 0px !important; }
+      
+      
+#pwf span div span {
+  height: 25px !important;
+  font-family: var(--base-family);
+  font-style: var(--base-style);
+  font-size: 14px !important;
+  line-height: 24px !important;
+  font-weight: bold !important;
+  letter-spacing: var(--body-letter-spacing);
+  color: #111 !important;
+    border: 0px !important;
+    padding: 0 3px  !important;
+}
+      
+#pwf .faves-count::after, #pwf  .faves-count::before {
+  display: none !important; }
+            
+      
+#pwf span div i {
+    font-size: 14px !important;
+  	color: #000;
+
+}
+
+      
+.border {
+  border-radius: 4px; }
+      
+.ssw-faveiticon {
+  padding-left: 0px !important; }
+ 
+      
+.product-options--type-collection .product-options__value--large-text {
+  min-width: 35px !important;
+  min-height: 35px !important;
+  padding: 0 5px !important;
+}
+      
+      
+.product-options__value--text, .product-options--type-page .product-options__value--large-text {
+  min-width: 35px !important;
+  min-height: 35px !important;
+  padding: 0 5px !important;
+}
+      
+      
+#ssw-review-simple-html .ssw-simple-connect > .ssw-review-input-block > input.ssw-input-block-level, #ssw-widget-recommends-html, .ssw-reviews-page .ssw-simple-connect > .ssw-review-input-block > input.ssw-input-block-level {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0px 20px; !important;
+
+}
+      
+
+      
+      
+#ssw-widget-recommends-html .ssw-reviews-header .ssw-question-add-review,
+#ssw-widget-recommends-html .ssw-reviews-header .ssw-ask-question-link,
+#ssw-widget-recommends-html .ssw-reviews-header .gw-review-btn,
+.ssw-control-group .btn {
+    background-color: #141414 !important;
+  	border: 1px solid #141414 !important;
+    color: #fff !important;
+}
+
+#ssw-widget-recommends-html .ssw-reviews-header .ssw-question-add-review:hover,
+#ssw-widget-recommends-html .ssw-reviews-header .ssw-ask-question-link:hover,
+#ssw-widget-recommends-html .ssw-reviews-header .gw-review-btn:hover,
+.ssw-control-group .btn:hover {
+    background-color: #fff !important;
+    border: 1px solid #141414 !important;
+    color: #141414 !important;
+}
+      
+
+.tabs[data-type="horizontal"] .tabs__btn.active, .tabs[data-type="horizontal"] .tabs__btn:hover {
+  background-color: var(--theme2);
+  color: var(--theme);
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 4px solid #000;
+}
+      
+      
+
+.tabs[data-type="horizontal"] .tabs__btn {
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;} 
+      
+      
+.product-gallery__thumbnail_item.current .product-gallery__thumbnail_item_inner::before {
+  border-color: #ccc !important;
+  border-radius: 4px !important;
+}
+      
+
+      
+.product-options--type-page .product-options__value--circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px !important;
+}
+      
+.product-options--type-page .product-options__value--circle.active::before {
+  width: 40px  !important;
+  border-radius: 5px !important;
+  height: 40px  !important;  }
+  
+      
+.tabs[data-type="horizontal"] .tabs__body > div > span i {
+  position: absolute;
+  right: 5px;
+  top: 25px !important;
+}
+ 
+      
+.tabs[data-type="horizontal"] .tabs__body > div {
+  display: block;
+  min-height: 50px  !important;
+  line-height: 50px  !important;
+}
+
+  
+      
+
+
+      
+#shopify-section-template--15840688636117__main div.plusx, 
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="10mlredatomizer"], 
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="10mlgreenatomizer"], 
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="10mlpurpleatomizer"], 
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="10mlnavyblueatomizer"], 
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="10mlnavyatomizer"], 
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="10mllightblueatomizer"], 
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="10mlbavyatomizer"], 
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="10mlblackatomizer"], 
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="10mlgoldatomizer"],
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="10mlsilveratomizer"],
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="10mlpinkatomizer"],
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="10mlblueatomizer"],
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="10mlrefillable"], 
+#shopify-section-template--15840688636117__related-products div.product-options__value[data-value="5mlrefillable"]{
+      display: none !important;
+  } 
+
+
+      
